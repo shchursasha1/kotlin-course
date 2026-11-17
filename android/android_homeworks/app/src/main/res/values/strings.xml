@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Homework2_1</string>
-    <string name="login_hint">Login</string>
+    <string name="first_number_hint">Введіть перше число</string>
+    <string name="second_number_hint">Введіть друге число</string>
+    <string name="clear">Очистити</string>
+    <string name="result_empty">Результат:</string>
 </resources>
