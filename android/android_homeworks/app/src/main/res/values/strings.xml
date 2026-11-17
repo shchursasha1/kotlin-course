@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Homework2_1</string>
+    <string name="login_hint">Login</string>
 </resources>

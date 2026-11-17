@@ -12,13 +12,17 @@ android {
         applicationId = "com.example.homework2_1"
         minSdk = 24
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            // Debug app is installed as com.example.homework2_1.debug
+            applicationIdSuffix = ".debug"
+        }
         release {
             optimization {
                 enable = true
@@ -38,7 +42,19 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    implementation(libs.coil)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+}
+
+tasks.register("printProjectInfo") {
+    // Read values here, because configuration cache doesn't allow using `project` inside doLast
+    val moduleName = project.name
+    val buildDirPath = project.layout.buildDirectory.get().asFile.path
+    doLast {
+        println("--- Інформація про модуль ---")
+        println("Модуль: $moduleName")
+        println("Шлях до збірки: $buildDirPath")
+    }
 }
