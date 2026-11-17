@@ -4,4 +4,5 @@
     <string name="second_number_hint">Введіть друге число</string>
     <string name="clear">Очистити</string>
     <string name="result_empty">Результат:</string>
+    <string name="open_full_calculator">Повний калькулятор</string>
 </resources>

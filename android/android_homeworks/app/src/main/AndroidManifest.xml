@@ -25,6 +25,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".FullCalculatorActivity" />
+
         <activity
             android:name=".DetailsActivity"
             android:exported="true">

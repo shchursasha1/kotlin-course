@@ -1,5 +1,6 @@
 package com.example.homework2_1
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             secondNumberInput.text.clear()
             resultText.text = getString(R.string.result_empty)
             Log.d(TAG, "Clear")
+        }
+
+        findViewById<Button>(R.id.openFullCalculatorButton).setOnClickListener {
+            startActivity(Intent(this, FullCalculatorActivity::class.java))
         }
     }
 

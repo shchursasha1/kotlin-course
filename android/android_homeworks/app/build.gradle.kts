@@ -34,6 +34,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        // Generates binding classes for layouts, e.g. ActivityFullCalculatorBinding
+        viewBinding = true
+    }
 }
 
 dependencies {
