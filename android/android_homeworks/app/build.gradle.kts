@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.coil)
     implementation(libs.timber)
+    implementation(libs.androidx.lifecycle.process)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

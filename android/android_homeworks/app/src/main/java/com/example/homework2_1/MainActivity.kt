@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var secondNumberInput: EditText
     private lateinit var resultText: TextView
 
+    private val audioPlayer = AudioPlayer()
+    private val analyticsTracker = AnalyticsTracker()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,6 +34,13 @@ class MainActivity : AppCompatActivity() {
         // Timber creates the tag from the class name: MainActivity
         Timber.d("MainActivity успішно запущена!")
         Timber.d("MainActivity: onCreate() викликано")
+
+        // Observers get lifecycle events by themselves
+        lifecycle.addObserver(audioPlayer)
+        lifecycle.addObserver(analyticsTracker)
+
+        UserTracker.register(this)
+        Timber.d("Зареєстровано слухачів у UserTracker: ${UserTracker.getListenersCount()}")
 
         firstNumberInput = findViewById(R.id.firstNumberInput)
         secondNumberInput = findViewById(R.id.secondNumberInput)
@@ -86,6 +96,8 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Timber.d("MainActivity: onDestroy() викликано")
+        // Fix for the memory leak: remove the destroyed Activity from the singleton
+        UserTracker.unregister(this)
     }
 
     private fun calculate(operation: String) {
