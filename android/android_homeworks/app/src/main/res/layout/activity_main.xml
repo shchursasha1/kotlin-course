@@ -88,4 +88,17 @@
         android:layout_marginTop="24dp"
         android:text="@string/open_full_calculator" />
 
+    <!-- Increments MyApp.startCount -->
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/count" />
+
+    <Button
+        android:id="@+id/openSecondButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_second" />
+
 </LinearLayout>

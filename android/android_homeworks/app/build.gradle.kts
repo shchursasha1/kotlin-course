@@ -37,6 +37,8 @@ android {
     buildFeatures {
         // Generates binding classes for layouts, e.g. ActivityFullCalculatorBinding
         viewBinding = true
+        // Generates BuildConfig class with BuildConfig.DEBUG
+        buildConfig = true
     }
 }
 
@@ -47,6 +49,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     implementation(libs.coil)
+    implementation(libs.timber)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

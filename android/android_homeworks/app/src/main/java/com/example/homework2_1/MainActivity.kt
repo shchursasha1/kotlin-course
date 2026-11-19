@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,8 +28,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Log for `adb logcat -s MyTag:D *:S`
-        Log.d("MyTag", "MainActivity started")
+        // Timber creates the tag from the class name: MainActivity
+        Timber.d("MainActivity успішно запущена!")
+        Timber.d("MainActivity: onCreate() викликано")
 
         firstNumberInput = findViewById(R.id.firstNumberInput)
         secondNumberInput = findViewById(R.id.secondNumberInput)
@@ -49,6 +51,41 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.openFullCalculatorButton).setOnClickListener {
             startActivity(Intent(this, FullCalculatorActivity::class.java))
         }
+
+        findViewById<Button>(R.id.countButton).setOnClickListener {
+            val app = application as MyApp
+            app.startCount++
+            Timber.d("startCount = ${app.startCount}")
+        }
+
+        findViewById<Button>(R.id.openSecondButton).setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Timber.d("MainActivity: onStart() викликано")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.d("MainActivity: onResume() викликано")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.d("MainActivity: onPause() викликано")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.d("MainActivity: onStop() викликано")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.d("MainActivity: onDestroy() викликано")
     }
 
     private fun calculate(operation: String) {

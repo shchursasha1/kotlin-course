@@ -5,4 +5,7 @@
     <string name="clear">Очистити</string>
     <string name="result_empty">Результат:</string>
     <string name="open_full_calculator">Повний калькулятор</string>
+    <string name="count">Лічильник +1</string>
+    <string name="open_second">Відкрити SecondActivity</string>
+    <string name="second_screen">Це SecondActivity</string>
 </resources>
