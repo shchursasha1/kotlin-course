@@ -12,4 +12,7 @@
     <string name="timer_seconds_hint">Секунди (за замовчуванням 30)</string>
     <string name="timer_start">Старт</string>
     <string name="timer_reset">Скидання</string>
+    <string name="open_dice">Гральні кістки</string>
+    <string name="roll_the_dice">Roll the Dice</string>
+    <string name="roll">Roll!</string>
 </resources>

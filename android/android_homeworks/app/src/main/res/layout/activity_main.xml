@@ -107,4 +107,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_timer" />
 
+    <Button
+        android:id="@+id/openDiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_dice" />
+
 </LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dice screen sizes (from the dice template) -->
+    <dimen name="die_dimen">80dp</dimen>
+    <dimen name="dice_vertical_margin">48dp</dimen>
+    <dimen name="headline_margin">48dp</dimen>
+</resources>

@@ -75,6 +75,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.openTimerButton).setOnClickListener {
             startActivity(Intent(this, TimerActivity::class.java))
         }
+
+        findViewById<Button>(R.id.openDiceButton).setOnClickListener {
+            startActivity(Intent(this, DiceActivity::class.java))
+        }
     }
 
     override fun onStart() {
