@@ -101,4 +101,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_second" />
 
+    <Button
+        android:id="@+id/openTimerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_timer" />
+
 </LinearLayout>

@@ -8,4 +8,8 @@
     <string name="count">Лічильник +1</string>
     <string name="open_second">Відкрити SecondActivity</string>
     <string name="second_screen">Це SecondActivity</string>
+    <string name="open_timer">Таймер (MVVM)</string>
+    <string name="timer_seconds_hint">Секунди (за замовчуванням 30)</string>
+    <string name="timer_start">Старт</string>
+    <string name="timer_reset">Скидання</string>
 </resources>

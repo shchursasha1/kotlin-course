@@ -71,6 +71,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.openSecondButton).setOnClickListener {
             startActivity(Intent(this, SecondActivity::class.java))
         }
+
+        findViewById<Button>(R.id.openTimerButton).setOnClickListener {
+            startActivity(Intent(this, TimerActivity::class.java))
+        }
     }
 
     override fun onStart() {
