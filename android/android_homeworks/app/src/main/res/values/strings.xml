@@ -13,6 +13,7 @@
     <string name="timer_start">Старт</string>
     <string name="timer_reset">Скидання</string>
     <string name="open_dice">Гральні кістки</string>
+    <string name="open_dice_coroutines">Гральні кістки (корутини)</string>
     <string name="roll_the_dice">Roll the Dice</string>
     <string name="roll">Roll!</string>
 </resources>

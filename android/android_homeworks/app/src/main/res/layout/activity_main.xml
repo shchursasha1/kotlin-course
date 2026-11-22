@@ -113,4 +113,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_dice" />
 
+    <Button
+        android:id="@+id/openDiceCoroutinesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_dice_coroutines" />
+
 </LinearLayout>
