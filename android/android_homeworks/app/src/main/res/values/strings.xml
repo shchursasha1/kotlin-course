@@ -14,6 +14,9 @@
     <string name="timer_reset">Скидання</string>
     <string name="open_dice">Гральні кістки</string>
     <string name="open_dice_coroutines">Гральні кістки (корутини)</string>
+    <string name="open_download">Завантаження файлу (Flow)</string>
+    <string name="download_file">Скачати файл</string>
+    <string name="download_cancel">Скасувати</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>

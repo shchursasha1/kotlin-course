@@ -125,4 +125,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_coroutine_errors" />
 
+    <Button
+        android:id="@+id/openDownloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_download" />
+
 </LinearLayout>

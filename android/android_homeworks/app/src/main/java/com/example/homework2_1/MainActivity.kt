@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
+import com.example.homework2_1.flow.DownloadActivity
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
@@ -88,6 +89,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openCoroutineErrorsButton).setOnClickListener {
             startActivity(Intent(this, CoroutineErrorsActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openDownloadButton).setOnClickListener {
+            startActivity(Intent(this, DownloadActivity::class.java))
         }
     }
 
