@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
 import timber.log.Timber
 
@@ -83,6 +84,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openDiceCoroutinesButton).setOnClickListener {
             startActivity(Intent(this, DiceCoroutinesActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openCoroutineErrorsButton).setOnClickListener {
+            startActivity(Intent(this, CoroutineErrorsActivity::class.java))
         }
     }
 

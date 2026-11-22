@@ -119,4 +119,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_dice_coroutines" />
 
+    <Button
+        android:id="@+id/openCoroutineErrorsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_coroutine_errors" />
+
 </LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".coroutines.CoroutineErrorsActivity">
+
+    <!-- All results are in Logcat, tag CoroutineErrors -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:text="@string/errors_logcat_hint"
+        android:textSize="18sp" />
+
+    <!-- Block 1: cooperative cancellation -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/errors_start" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/errors_cancel" />
+
+    <!-- Blocks 2-3: supervisorScope -->
+    <Button
+        android:id="@+id/btnTestCrash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/errors_test_crash" />
+
+    <!-- Block 4: CoroutineExceptionHandler -->
+    <Button
+        android:id="@+id/btnGlobalCrash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/errors_global_crash" />
+
+    <!-- Extra task: handler in a child coroutine -->
+    <Button
+        android:id="@+id/btnNestedCrash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/errors_nested_crash" />
+
+</LinearLayout>

@@ -36,6 +36,8 @@
 
         <activity android:name=".coroutines.DiceCoroutinesActivity" />
 
+        <activity android:name=".coroutines.CoroutineErrorsActivity" />
+
         <activity
             android:name=".DetailsActivity"
             android:exported="true">
