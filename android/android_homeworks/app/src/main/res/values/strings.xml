@@ -21,6 +21,11 @@
     <string name="fib_logcat_hint">Результати дивіться в Logcat (тег EEEE)</string>
     <string name="fib_subscribe">Підписатися</string>
     <string name="fib_cancel">Скасувати</string>
+    <string name="open_broadcast_log">Журнал системних подій (Compose)</string>
+    <string name="events_title">Журнал системних подій</string>
+    <string name="events_clear_all">Очистити</string>
+    <string name="events_empty">Подій ще немає. Підключіть зарядку або увімкніть режим «У літаку».</string>
+    <string name="events_delete">Видалити</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>

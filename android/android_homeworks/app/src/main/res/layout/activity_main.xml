@@ -137,4 +137,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_flow_comparison" />
 
+    <Button
+        android:id="@+id/openBroadcastLogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_broadcast_log" />
+
 </LinearLayout>

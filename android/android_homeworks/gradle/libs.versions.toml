@@ -11,6 +11,12 @@ constraintlayout = "2.1.4"
 coil = "2.6.0"
 timber = "5.0.1"
 lifecycleProcess = "2.8.0"
+# Kotlin version built into AGP, the Compose compiler plugin must match it
+kotlin = "2.2.10"
+# Newer BOMs need compileSdk 37.1, only 37.0 is installed
+composeBom = "2026.09.00"
+activityCompose = "1.13.0"
+lifecycleCompose = "2.11.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,7 +30,15 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 androidx-lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycleProcess" }
+# Compose: versions of these libraries come from the BOM
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 

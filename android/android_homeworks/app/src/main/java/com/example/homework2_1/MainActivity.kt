@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.homework2_1.broadcast.BroadcastActivity
 import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
 import com.example.homework2_1.flow.DownloadActivity
@@ -98,6 +99,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openFlowComparisonButton).setOnClickListener {
             startActivity(Intent(this, FlowComparisonActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openBroadcastLogButton).setOnClickListener {
+            startActivity(Intent(this, BroadcastActivity::class.java))
         }
     }
 

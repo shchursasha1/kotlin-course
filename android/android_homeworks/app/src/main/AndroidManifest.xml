@@ -42,6 +42,8 @@
 
         <activity android:name=".flowcomparison.FlowComparisonActivity" />
 
+        <activity android:name=".broadcast.BroadcastActivity" />
+
         <activity
             android:name=".DetailsActivity"
             android:exported="true">
