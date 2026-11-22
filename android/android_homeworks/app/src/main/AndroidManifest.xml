@@ -51,6 +51,8 @@
 
         <activity android:name=".service.ServiceTimerActivity" />
 
+        <activity android:name=".work.WorkManagerActivity" />
+
         <service
             android:name=".service.TimerForegroundService"
             android:exported="false"

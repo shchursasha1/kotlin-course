@@ -30,6 +30,9 @@
     <string name="service_seconds">секунд</string>
     <string name="service_start">Старт Таймер</string>
     <string name="service_stop">Стоп Таймер</string>
+    <string name="open_work_manager">Синхронізація новин (WorkManager)</string>
+    <string name="work_sync_now">Синхронізувати зараз</string>
+    <string name="work_night_sync">Увімкнути нічну синхронізацію</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>

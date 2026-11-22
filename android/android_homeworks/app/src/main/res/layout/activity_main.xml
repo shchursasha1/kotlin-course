@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- ScrollView: all the homework buttons no longer fit on one screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="24dp"
-    android:orientation="vertical"
     tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/firstNumberInput"
@@ -149,4 +154,12 @@
         android:layout_height="wrap_content"
         android:text="@string/open_service_timer" />
 
+    <Button
+        android:id="@+id/openWorkManagerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_work_manager" />
+
 </LinearLayout>
+
+</ScrollView>
