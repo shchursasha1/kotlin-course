@@ -160,6 +160,12 @@
         android:layout_height="wrap_content"
         android:text="@string/open_work_manager" />
 
+    <Button
+        android:id="@+id/openWaterReminderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_water_reminder" />
+
 </LinearLayout>
 
 </ScrollView>

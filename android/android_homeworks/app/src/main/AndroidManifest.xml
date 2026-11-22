@@ -53,6 +53,8 @@
 
         <activity android:name=".work.WorkManagerActivity" />
 
+        <activity android:name=".water.WaterReminderActivity" />
+
         <service
             android:name=".service.TimerForegroundService"
             android:exported="false"
