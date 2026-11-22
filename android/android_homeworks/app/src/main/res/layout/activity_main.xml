@@ -131,4 +131,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_download" />
 
+    <Button
+        android:id="@+id/openFlowComparisonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_flow_comparison" />
+
 </LinearLayout>

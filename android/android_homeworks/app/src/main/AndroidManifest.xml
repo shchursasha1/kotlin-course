@@ -40,6 +40,8 @@
 
         <activity android:name=".flow.DownloadActivity" />
 
+        <activity android:name=".flowcomparison.FlowComparisonActivity" />
+
         <activity
             android:name=".DetailsActivity"
             android:exported="true">

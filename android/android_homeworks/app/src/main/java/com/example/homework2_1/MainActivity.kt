@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
 import com.example.homework2_1.flow.DownloadActivity
+import com.example.homework2_1.flowcomparison.FlowComparisonActivity
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
@@ -93,6 +94,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openDownloadButton).setOnClickListener {
             startActivity(Intent(this, DownloadActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openFlowComparisonButton).setOnClickListener {
+            startActivity(Intent(this, FlowComparisonActivity::class.java))
         }
     }
 

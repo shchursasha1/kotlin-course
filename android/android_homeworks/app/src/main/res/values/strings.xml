@@ -17,6 +17,10 @@
     <string name="open_download">Завантаження файлу (Flow)</string>
     <string name="download_file">Скачати файл</string>
     <string name="download_cancel">Скасувати</string>
+    <string name="open_flow_comparison">Flow vs StateFlow (Фібоначчі)</string>
+    <string name="fib_logcat_hint">Результати дивіться в Logcat (тег EEEE)</string>
+    <string name="fib_subscribe">Підписатися</string>
+    <string name="fib_cancel">Скасувати</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>
