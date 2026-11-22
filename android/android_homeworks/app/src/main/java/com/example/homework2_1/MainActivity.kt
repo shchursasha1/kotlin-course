@@ -15,6 +15,7 @@ import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
 import com.example.homework2_1.flow.DownloadActivity
 import com.example.homework2_1.flowcomparison.FlowComparisonActivity
+import com.example.homework2_1.service.ServiceTimerActivity
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
@@ -103,6 +104,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openBroadcastLogButton).setOnClickListener {
             startActivity(Intent(this, BroadcastActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openServiceTimerButton).setOnClickListener {
+            startActivity(Intent(this, ServiceTimerActivity::class.java))
         }
     }
 

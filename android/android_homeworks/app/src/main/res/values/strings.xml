@@ -26,6 +26,10 @@
     <string name="events_clear_all">Очистити</string>
     <string name="events_empty">Подій ще немає. Підключіть зарядку або увімкніть режим «У літаку».</string>
     <string name="events_delete">Видалити</string>
+    <string name="open_service_timer">Таймер на Service (Foreground + Bound)</string>
+    <string name="service_seconds">секунд</string>
+    <string name="service_start">Старт Таймер</string>
+    <string name="service_stop">Стоп Таймер</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>

@@ -143,4 +143,10 @@
         android:layout_height="wrap_content"
         android:text="@string/open_broadcast_log" />
 
+    <Button
+        android:id="@+id/openServiceTimerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_service_timer" />
+
 </LinearLayout>
