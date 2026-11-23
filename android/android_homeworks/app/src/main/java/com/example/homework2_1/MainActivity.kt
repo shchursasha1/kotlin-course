@@ -15,6 +15,7 @@ import com.example.homework2_1.coroutines.CoroutineErrorsActivity
 import com.example.homework2_1.coroutines.DiceCoroutinesActivity
 import com.example.homework2_1.flow.DownloadActivity
 import com.example.homework2_1.flowcomparison.FlowComparisonActivity
+import com.example.homework2_1.privat.PrivatBankActivity
 import com.example.homework2_1.service.ServiceTimerActivity
 import com.example.homework2_1.water.WaterReminderActivity
 import com.example.homework2_1.work.WorkManagerActivity
@@ -118,6 +119,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openWaterReminderButton).setOnClickListener {
             startActivity(Intent(this, WaterReminderActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.openPrivatBankButton).setOnClickListener {
+            startActivity(Intent(this, PrivatBankActivity::class.java))
         }
     }
 

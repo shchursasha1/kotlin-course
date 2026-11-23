@@ -166,6 +166,12 @@
         android:layout_height="wrap_content"
         android:text="@string/open_water_reminder" />
 
+    <Button
+        android:id="@+id/openPrivatBankButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_privat_bank" />
+
 </LinearLayout>
 
 </ScrollView>

@@ -38,6 +38,7 @@
     <string name="water_switch">Увімкнути нагадування</string>
     <string name="water_interval">Інтервал, хвилин</string>
     <string name="water_interval_hint">Мінімум 15 хвилин (обмеження системи)</string>
+    <string name="open_privat_bank">ПриватБанк — валюти (Retrofit)</string>
     <string name="open_coroutine_errors">Помилки та скасування корутин</string>
     <string name="errors_logcat_hint">Результати дивіться в Logcat (тег CoroutineErrors)</string>
     <string name="errors_start">Start</string>
